@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VidaClara — Salud sin barreras</title>
+  <meta name="description" content="Accede a servicios de salud física y mental de forma sencilla, sin importar tu situación económica o tecnológica." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="/" class="nav__logo">
+        <span class="nav__logo-mark">VC</span>
+        VidaClara
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#como-funciona">Cómo funciona</a></li>
+        <li><a href="#kiosco">Kiosco</a></li>
+        <li><a href="pages/agendar.html" class="nav__cta">Agendar cita</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__bg">
+      <div class="hero__blob hero__blob--1"></div>
+      <div class="hero__blob hero__blob--2"></div>
+      <div class="hero__grid"></div>
+    </div>
+    <div class="container hero__content">
+      <div class="hero__text">
+        <span class="hero__eyebrow">Salud accesible para todos</span>
+        <h1 class="hero__title">
+          Tu salud,<br>
+          <em>sin barreras.</em>
+        </h1>
+        <p class="hero__desc">
+          Encuentra servicios de salud física y mental, agenda citas y recibe seguimiento — sin importar si tienes teléfono, computadora o experiencia tecnológica.
+        </p>
+        <div class="hero__actions">
+          <a href="pages/buscar.html" class="btn btn--primary btn--lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            Buscar servicios
+          </a>
+          <a href="#como-funciona" class="btn btn--ghost btn--lg">¿Cómo funciona?</a>
+        </div>
+        <div class="hero__trust">
+          <div class="trust-item">
+            <strong>+2,400</strong>
+            <span>Servicios disponibles</span>
+          </div>
+          <div class="trust-divider"></div>
+          <div class="trust-item">
+            <strong>Gratis</strong>
+            <span>Opciones sin costo</span>
+          </div>
+          <div class="trust-divider"></div>
+          <div class="trust-item">
+            <strong>24/7</strong>
+            <span>Información disponible</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <div class="hero__card hero__card--main">
+          <div class="card-pill card-pill--green">● Disponible ahora</div>
+          <div class="hero__card-icon">🏥</div>
+          <h3>Medicina General</h3>
+          <p>Clínica San Rafael · 2.3 km</p>
+          <div class="hero__card-row">
+            <span class="price-tag">Desde Q50</span>
+            <button class="btn btn--sm btn--primary">Agendar</button>
+          </div>
+        </div>
+        <div class="hero__card hero__card--float hero__card--float1">
+          <div class="card-pill card-pill--purple">Salud Mental</div>
+          <p>Sesión gratuita disponible</p>
+        </div>
+        <div class="hero__card hero__card--float hero__card--float2">
+          <span class="checkmark">✓</span>
+          <p>Cita confirmada<br><strong>Lun 14 mayo · 2:00 PM</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" id="servicios">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__eyebrow">Servicios disponibles</span>
+        <h2 class="section__title">Atención que se adapta<br>a lo que necesitas</h2>
+        <p class="section__sub">Medicina general, salud mental, farmacia y más — con opciones gratuitas y de bajo costo.</p>
+      </div>
+      <div class="services-grid">
+        <a href="pages/buscar.html" class="service-card service-card--teal">
+          <div class="service-card__icon">🩺</div>
+          <div class="service-card__body">
+            <h3>Medicina General</h3>
+            <p>Consultas, diagnósticos y tratamientos básicos cerca de ti.</p>
+            <div class="service-card__meta">
+              <span class="tag">Desde Q50</span>
+              <span class="tag tag--outline">340 clínicas</span>
+            </div>
+          </div>
+          <span class="service-card__arrow">→</span>
+        </a>
+        <a href="pages/buscar.html" class="service-card service-card--purple">
+          <div class="service-card__icon">🧠</div>
+          <div class="service-card__body">
+            <h3>Salud Mental</h3>
+            <p>Psicología, terapia y apoyo emocional accesible.</p>
+            <div class="service-card__meta">
+              <span class="tag tag--free">Opciones gratuitas</span>
+              <span class="tag tag--outline">120 centros</span>
+            </div>
+          </div>
+          <span class="service-card__arrow">→</span>
+        </a>
+        <a href="pages/buscar.html" class="service-card service-card--amber">
+          <div class="service-card__icon">💊</div>
+          <div class="service-card__body">
+            <h3>Farmacia</h3>
+            <p>Medicamentos esenciales a precios accesibles y genéricos.</p>
+            <div class="service-card__meta">
+              <span class="tag">Desde Q15</span>
+              <span class="tag tag--outline">680 farmacias</span>
+            </div>
+          </div>
+          <span class="service-card__arrow">→</span>
+        </a>
+        <a href="pages/buscar.html" class="service-card service-card--green">
+          <div class="service-card__icon">🤱</div>
+          <div class="service-card__body">
+            <h3>Materno-Infantil</h3>
+            <p>Cuidado prenatal, pediatría y vacunación para tu familia.</p>
+            <div class="service-card__meta">
+              <span class="tag">Desde Q60</span>
+              <span class="tag tag--outline">200 centros</span>
+            </div>
+          </div>
+          <span class="service-card__arrow">→</span>
+        </a>
+        <a href="pages/buscar.html" class="service-card service-card--blue">
+          <div class="service-card__icon">💉</div>
+          <div class="service-card__body">
+            <h3>Vacunación</h3>
+            <p>Calendario de vacunas completo para niños y adultos.</p>
+            <div class="service-card__meta">
+              <span class="tag tag--free">Gratuito MSPAS</span>
+              <span class="tag tag--outline">Disponible hoy</span>
+            </div>
+          </div>
+          <span class="service-card__arrow">→</span>
+        </a>
+        <a href="pages/buscar.html" class="service-card service-card--rose">
+          <div class="service-card__icon">🥗</div>
+          <div class="service-card__body">
+            <h3>Nutrición</h3>
+            <p>Guías alimentarias y consultas con nutricionistas certificados.</p>
+            <div class="service-card__meta">
+              <span class="tag">Desde Q80</span>
+              <span class="tag tag--outline">90 centros</span>
+            </div>
+          </div>
+          <span class="service-card__arrow">→</span>
+        </a>
+      </div>
+      <div class="section__cta">
+        <a href="pages/buscar.html" class="btn btn--primary btn--lg">Ver todos los servicios cerca de mí →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section section--dark" id="como-funciona">
+    <div class="container">
+      <div class="section__header section__header--light">
+        <span class="section__eyebrow section__eyebrow--light">Así de simple</span>
+        <h2 class="section__title">Del problema<br>a la solución</h2>
+        <p class="section__sub">Tres pasos para acceder a atención de salud sin complicaciones.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step__num">01</div>
+          <div class="step__icon step__icon--teal">🔍</div>
+          <h3>Busca</h3>
+          <p>Escribe qué necesitas o cómo te sientes. Te mostramos opciones claras ordenadas por cercanía y costo.</p>
+          <span class="step__channel">Web · Kiosco</span>
+        </div>
+        <div class="step__connector">
+          <div class="step__line"></div>
+          <span>→</span>
+          <div class="step__line"></div>
+        </div>
+        <div class="step">
+          <div class="step__num">02</div>
+          <div class="step__icon step__icon--accent">📅</div>
+          <h3>Agenda</h3>
+          <p>Elige fecha, hora y profesional. Confirma con tu nombre y teléfono. Sin crear cuentas complicadas.</p>
+          <span class="step__channel">Web · App · Kiosco</span>
+        </div>
+        <div class="step__connector">
+          <div class="step__line"></div>
+          <span>→</span>
+          <div class="step__line"></div>
+        </div>
+        <div class="step">
+          <div class="step__num">03</div>
+          <div class="step__icon step__icon--purple">❤️</div>
+          <h3>Recibe seguimiento</h3>
+          <p>Recordatorios, recetas digitales e historial en la app. En la clínica, el kiosco lo tiene todo listo.</p>
+          <span class="step__channel">App · Kiosco</span>
+        </div>
+      </div>
+
+      <div class="journey-banner">
+        <div class="journey-step">
+          <span class="journey-icon">👤</span>
+          <span>Usuario busca atención</span>
+        </div>
+        <span class="journey-arrow">→</span>
+        <div class="journey-step">
+          <span class="journey-icon">🌐</span>
+          <span>Entra a la web</span>
+        </div>
+        <span class="journey-arrow">→</span>
+        <div class="journey-step">
+          <span class="journey-icon">📅</span>
+          <span>Agenda su cita</span>
+        </div>
+        <span class="journey-arrow">→</span>
+        <div class="journey-step">
+          <span class="journey-icon">📱</span>
+          <span>Seguimiento en app</span>
+        </div>
+        <span class="journey-arrow">→</span>
+        <div class="journey-step">
+          <span class="journey-icon">🖥️</span>
+          <span>Kiosco en clínica</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KIOSCO -->
+  <section class="section section--kiosk" id="kiosco">
+    <div class="container kiosk-layout">
+      <div class="kiosk-text">
+        <span class="section__eyebrow">Para todos, sin excepción</span>
+        <h2 class="section__title">El kiosco digital:<br>salud <em>sin tecnología</em></h2>
+        <p>¿No tienes teléfono inteligente o no manejas bien las apps? No hay problema. En clínicas y farmacias aliadas encontrarás nuestros kioscos con pantalla táctil grande, instrucciones sencillas y soporte en español, inglés y kaqchikel.</p>
+        <ul class="kiosk-features">
+          <li><span class="kiosk-check">✓</span> Pantalla táctil de 43" con letras grandes</li>
+          <li><span class="kiosk-check">✓</span> Soporte multiidioma</li>
+          <li><span class="kiosk-check">✓</span> Sin necesidad de cuenta ni contraseña</li>
+          <li><span class="kiosk-check">✓</span> Modo audio para personas con dificultad visual</li>
+          <li><span class="kiosk-check">✓</span> Botón de emergencia directo al 1-2-3</li>
+        </ul>
+        <a href="pages/buscar.html" class="btn btn--accent btn--lg">Encontrar kiosco cerca →</a>
+      </div>
+      <div class="kiosk-visual">
+        <div class="kiosk-device">
+          <div class="kiosk-screen">
+            <div class="kiosk-screen__header">VidaClara Kiosco</div>
+            <div class="kiosk-screen__greeting">Toca para comenzar</div>
+            <div class="kiosk-screen__icon">❤️</div>
+            <div class="kiosk-screen__langs">
+              <span class="kiosk-lang kiosk-lang--active">Español</span>
+              <span class="kiosk-lang">English</span>
+              <span class="kiosk-lang">Kaqchikel</span>
+            </div>
+            <div class="kiosk-screen__btn">TOCA AQUÍ</div>
+          </div>
+          <div class="kiosk-stand"></div>
+          <div class="kiosk-base"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section" id="testimonios">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__eyebrow">Historias reales</span>
+        <h2 class="section__title">Personas que ya<br>cuidan su salud</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial">
+          <div class="testimonial__avatar" style="background:#E6FFFA;color:#2C7A7B">MA</div>
+          <p>"Pude agendar mi cita al psicólogo sin tener que llamar por teléfono. Me avisaron por mensaje y todo salió perfecto."</p>
+          <strong>María A. — Ciudad de Guatemala</strong>
+        </div>
+        <div class="testimonial testimonial--featured">
+          <div class="testimonial__avatar" style="background:#553C9A;color:#fff">JL</div>
+          <p>"Soy adulto mayor y en la farmacia me ayudaron con el kiosco. Fue muy fácil, hasta saqué mi cita al médico yo solo."</p>
+          <strong>Juan L. — Mixco, Guatemala</strong>
+          <div class="testimonial__badge">⭐ Historia destacada</div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial__avatar" style="background:#F6E05E;color:#1A202C">RG</div>
+          <p>"Gracias a la app no se me olvidan mis medicamentos. Me manda recordatorio y ya tengo todo en el historial."</p>
+          <strong>Rosa G. — Villa Nueva, Guatemala</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-inner">
+        <h2>¿Listo para cuidar<br>tu salud hoy?</h2>
+        <p>Accede ahora, es gratis buscar. Sin crear cuenta para empezar.</p>
+        <div class="cta-actions">
+          <a href="pages/buscar.html" class="btn btn--accent btn--lg">Buscar servicios ahora</a>
+          <a href="pages/agendar.html" class="btn btn--ghost-light btn--lg">Agendar cita →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <span class="nav__logo-mark">VC</span>
+          VidaClara
+        </div>
+        <p>Plataforma de salud y bienestar accesible para Guatemala.</p>
+        <p class="footer__small">En colaboración con el Ministerio de Salud.</p>
+      </div>
+      <div class="footer__links">
+        <div class="footer__col">
+          <strong>Servicios</strong>
+          <a href="pages/buscar.html">Medicina General</a>
+          <a href="pages/buscar.html">Salud Mental</a>
+          <a href="pages/buscar.html">Farmacia</a>
+          <a href="pages/buscar.html">Vacunación</a>
+        </div>
+        <div class="footer__col">
+          <strong>Acceso</strong>
+          <a href="pages/agendar.html">Agendar cita</a>
+          <a href="pages/buscar.html">Buscar clínica</a>
+          <a href="#kiosco">Kiosco digital</a>
+          <a href="#">App móvil</a>
+        </div>
+        <div class="footer__col">
+          <strong>Soporte</strong>
+          <a href="#">Ayuda</a>
+          <a href="#">Preguntas frecuentes</a>
+          <a href="#">Línea: 1800-SALUD</a>
+          <a href="#">Emergencias: 1-2-3</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <span>© 2026 VidaClara · Todos los derechos reservados</span>
+        <span>Hecho con ❤️ para Guatemala</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

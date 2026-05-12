@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buscar Servicios — VidaClara</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo">
+        <span class="nav__logo-mark">VC</span>
+        VidaClara
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="../index.html#servicios">Servicios</a></li>
+        <li><a href="../index.html#como-funciona">Cómo funciona</a></li>
+        <li><a href="../index.html#kiosco">Kiosco</a></li>
+        <li><a href="agendar.html" class="nav__cta">Agendar cita</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <div class="container">
+      <h1>Buscar servicios de salud</h1>
+      <p>Encuentra clínicas, farmacias y centros de bienestar cerca de ti.</p>
+      <div class="search-box">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color:#718096;flex-shrink:0"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="text" placeholder="Buscar por especialidad, síntoma o clínica..." />
+        <button class="btn btn--primary btn--md">Buscar</button>
+      </div>
+      <div class="filter-row">
+        <button class="filter-chip filter-chip--active">Todos</button>
+        <button class="filter-chip">Gratuitos</button>
+        <button class="filter-chip">Menos de Q100</button>
+        <button class="filter-chip">Cerca de mí</button>
+        <button class="filter-chip">Disponible hoy</button>
+        <button class="filter-chip">Salud mental</button>
+        <button class="filter-chip">Farmacia</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="results-layout">
+      <div class="results-list">
+        <p class="results-count">24 servicios encontrados</p>
+
+        <div class="result-card">
+          <div class="result-card__icon">🏥</div>
+          <div class="result-card__body">
+            <h3>Clínica San Rafael</h3>
+            <p>Medicina General · 2.3 km · Zona 2, Ciudad de Guatemala</p>
+            <div class="result-card__row">
+              <div style="display:flex;gap:8px;flex-wrap:wrap">
+                <span class="tag">Desde Q80</span>
+                <span class="tag tag--free">Disponible hoy</span>
+              </div>
+              <a href="agendar.html" class="btn btn--primary btn--sm">Agendar →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="result-card">
+          <div class="result-card__icon" style="background:#EDE9FE">🧠</div>
+          <div class="result-card__body">
+            <h3>Centro de Bienestar Mental</h3>
+            <p>Psicología · 4.1 km · Zona 10, Ciudad de Guatemala</p>
+            <div class="result-card__row">
+              <div style="display:flex;gap:8px;flex-wrap:wrap">
+                <span class="tag tag--free">Gratuito</span>
+                <span class="tag tag--outline">Próximo: 2:00 PM</span>
+              </div>
+              <a href="agendar.html" class="btn btn--primary btn--sm">Agendar →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="result-card">
+          <div class="result-card__icon" style="background:#FEF3C7">💊</div>
+          <div class="result-card__body">
+            <h3>Farmacia Comunitaria Norte</h3>
+            <p>Farmacia · 0.8 km · Zona 6, Ciudad de Guatemala</p>
+            <div class="result-card__row">
+              <div style="display:flex;gap:8px;flex-wrap:wrap">
+                <span class="tag">Desde Q15</span>
+                <span class="tag tag--free">Abierto ahora</span>
+              </div>
+              <a href="agendar.html" class="btn btn--primary btn--sm">Ver →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="result-card">
+          <div class="result-card__icon" style="background:#F0FFF4">🤱</div>
+          <div class="result-card__body">
+            <h3>Centro Materno-Infantil La Esperanza</h3>
+            <p>Pediatría · Materno · 3.5 km · Zona 12</p>
+            <div class="result-card__row">
+              <div style="display:flex;gap:8px;flex-wrap:wrap">
+                <span class="tag">Desde Q60</span>
+                <span class="tag tag--outline">Mañana 9:00 AM</span>
+              </div>
+              <a href="agendar.html" class="btn btn--primary btn--sm">Agendar →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="result-card">
+          <div class="result-card__icon" style="background:#EBF8FF">💉</div>
+          <div class="result-card__body">
+            <h3>Puesto de Vacunación MSPAS</h3>
+            <p>Vacunación · 1.2 km · Centro de Salud Zona 3</p>
+            <div class="result-card__row">
+              <div style="display:flex;gap:8px;flex-wrap:wrap">
+                <span class="tag tag--free">Completamente gratuito</span>
+                <span class="tag tag--free">Disponible hoy</span>
+              </div>
+              <a href="agendar.html" class="btn btn--primary btn--sm">Ver →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="result-card">
+          <div class="result-card__icon" style="background:#FFF5F5">🥗</div>
+          <div class="result-card__body">
+            <h3>Centro de Nutrición Integral</h3>
+            <p>Nutrición · 5.4 km · Zona 14, Ciudad de Guatemala</p>
+            <div class="result-card__row">
+              <div style="display:flex;gap:8px;flex-wrap:wrap">
+                <span class="tag">Desde Q80</span>
+                <span class="tag tag--outline">Lunes próximo</span>
+              </div>
+              <a href="agendar.html" class="btn btn--primary btn--sm">Agendar →</a>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align:center;padding:24px 0">
+          <button class="btn btn--ghost btn--md">Cargar más resultados</button>
+        </div>
+      </div>
+
+      <div class="map-placeholder">
+        <span>🗺️</span>
+        <strong style="font-size:18px;color:var(--c-dark)">Mapa interactivo</strong>
+        <p style="text-align:center;max-width:200px">Visualiza los servicios en el mapa para encontrar el más cercano</p>
+        <button class="btn btn--primary btn--md">Activar ubicación</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <span class="nav__logo-mark">VC</span>
+          VidaClara
+        </div>
+        <p>Plataforma de salud y bienestar accesible para Guatemala.</p>
+      </div>
+      <div class="footer__links">
+        <div class="footer__col">
+          <strong>Acceso</strong>
+          <a href="agendar.html">Agendar cita</a>
+          <a href="buscar.html">Buscar clínica</a>
+          <a href="../index.html#kiosco">Kiosco digital</a>
+        </div>
+        <div class="footer__col">
+          <strong>Soporte</strong>
+          <a href="#">Ayuda</a>
+          <a href="#">Línea: 1800-SALUD</a>
+          <a href="#">Emergencias: 1-2-3</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <span>© 2026 VidaClara</span>
+        <span>Hecho con ❤️ para Guatemala</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

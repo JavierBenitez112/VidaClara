@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agendar Cita — VidaClara</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="../index.html" class="nav__logo">
+        <span class="nav__logo-mark">VC</span>
+        VidaClara
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="buscar.html">← Volver a servicios</a></li>
+        <li><a href="../index.html#kiosco">Kiosco</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-hero" style="padding-bottom:32px">
+    <div class="container">
+      <h1>Agendar tu cita</h1>
+      <p>Clínica San Rafael · Medicina General</p>
+      <div class="booking-steps" style="margin-top:28px">
+        <div class="booking-step booking-step--done">
+          <div class="booking-step__num" style="background:var(--c-primary);color:#fff">✓</div>
+          Servicio
+        </div>
+        <div class="booking-step booking-step--active">
+          <div class="booking-step__num">2</div>
+          Fecha y Hora
+        </div>
+        <div class="booking-step">
+          <div class="booking-step__num">3</div>
+          Tus datos
+        </div>
+        <div class="booking-step">
+          <div class="booking-step__num">4</div>
+          Confirmar
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="booking-layout">
+      <div class="booking-main">
+        <!-- DOCTOR CARD -->
+        <div class="booking-card" style="display:flex;gap:20px;align-items:center;flex-wrap:wrap">
+          <div style="width:64px;height:64px;background:var(--c-light);border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:28px;flex-shrink:0">👨‍⚕️</div>
+          <div style="flex:1">
+            <div style="font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--c-gray);margin-bottom:4px">Profesional seleccionado</div>
+            <h2 style="font-size:20px;margin:0 0 4px">Dr. Carlos López</h2>
+            <p style="font-size:14px;color:var(--c-gray);margin:0">Medicina General · Clínica San Rafael, Zona 2</p>
+          </div>
+          <div style="text-align:right">
+            <span class="tag" style="font-size:14px;padding:8px 16px">Q80 / consulta</span>
+          </div>
+        </div>
+
+        <!-- CALENDAR -->
+        <div class="booking-card">
+          <h2>Selecciona la fecha</h2>
+          <p class="sub">Elige el día que mejor se adapte a ti</p>
+          <div class="calendar-header">
+            <button class="cal-nav" id="calPrev">‹</button>
+            <h3 id="calMonth">Mayo 2026</h3>
+            <button class="cal-nav" id="calNext">›</button>
+          </div>
+          <div class="cal-grid" id="calGrid"></div>
+        </div>
+
+        <!-- TIME SLOTS -->
+        <div class="booking-card">
+          <h2>Selecciona el horario</h2>
+          <p class="sub">Miércoles 14 de mayo — Horarios disponibles</p>
+          <div class="time-slots">
+            <div class="time-slot">8:00 AM</div>
+            <div class="time-slot">9:00 AM</div>
+            <div class="time-slot time-slot--unavailable">10:00 AM</div>
+            <div class="time-slot time-slot--unavailable">11:30 AM</div>
+            <div class="time-slot time-slot--selected">2:00 PM</div>
+            <div class="time-slot">3:30 PM</div>
+            <div class="time-slot">4:00 PM</div>
+            <div class="time-slot">5:00 PM</div>
+          </div>
+        </div>
+
+        <!-- FORM -->
+        <form class="booking-card" id="bookingForm">
+          <h2>Tus datos</h2>
+          <p class="sub">Solo necesitamos lo básico para confirmar tu cita</p>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+            <div class="form-group">
+              <label class="form-label">Nombre completo *</label>
+              <input type="text" class="form-input" placeholder="Tu nombre" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Teléfono *</label>
+              <input type="tel" class="form-input" placeholder="5555-1234" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Correo electrónico (opcional)</label>
+            <input type="email" class="form-input" placeholder="para recibir confirmación" />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Nota para el doctor (opcional)</label>
+            <textarea class="form-input" placeholder="Describe brevemente el motivo de tu consulta..."></textarea>
+          </div>
+
+          <div style="background:var(--c-light);border-radius:var(--radius-md);padding:16px;margin-bottom:24px;font-size:14px;color:var(--c-primary)">
+            <strong>Política de cancelación:</strong> Puedes cancelar tu cita hasta 2 horas antes sin costo alguno.
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--lg" style="width:100%;justify-content:center">
+            Confirmar cita — Miérc 14 mayo · 2:00 PM →
+          </button>
+          <p style="text-align:center;font-size:12px;color:var(--c-gray);margin-top:12px">
+            Al confirmar aceptas los <a href="#" style="color:var(--c-primary)">términos de servicio</a>. Tu información es confidencial.
+          </p>
+        </form>
+      </div>
+
+      <!-- SUMMARY SIDEBAR -->
+      <div>
+        <div class="summary-card">
+          <h3>Resumen de tu cita</h3>
+          <div class="summary-row">
+            <span class="summary-label">Servicio</span>
+            <span class="summary-value">Medicina General</span>
+          </div>
+          <div class="summary-row">
+            <span class="summary-label">Doctor</span>
+            <span class="summary-value">Dr. Carlos López</span>
+          </div>
+          <div class="summary-row">
+            <span class="summary-label">Clínica</span>
+            <span class="summary-value">San Rafael, Zona 2</span>
+          </div>
+          <div class="summary-row">
+            <span class="summary-label">Fecha</span>
+            <span class="summary-value" id="summaryDate">Miérc 14 de mayo</span>
+          </div>
+          <div class="summary-row">
+            <span class="summary-label">Hora</span>
+            <span class="summary-value" id="summaryTime">2:00 PM</span>
+          </div>
+          <div class="summary-row">
+            <span class="summary-label">Modalidad</span>
+            <span class="summary-value">Presencial</span>
+          </div>
+          <div class="summary-price">
+            <div class="summary-row" style="margin:0">
+              <span class="summary-label">Costo estimado</span>
+              <span class="summary-value">Q80</span>
+            </div>
+          </div>
+
+          <div style="margin-top:20px;padding:14px;background:rgba(246,224,94,.1);border-radius:var(--radius-md);border:1px solid rgba(246,224,94,.3)">
+            <p style="font-size:13px;color:rgba(255,255,255,.7);line-height:1.5">
+              ✓ Recibirás un recordatorio por SMS o WhatsApp el día anterior a tu cita.
+            </p>
+          </div>
+
+          <div style="margin-top:16px;text-align:center">
+            <p style="font-size:12px;color:rgba(255,255,255,.4)">¿Necesitas ayuda?</p>
+            <a href="tel:1800-72583" style="font-size:14px;font-weight:700;color:var(--c-accent)">1800-SALUD</a>
+          </div>
+        </div>
+
+        <div style="margin-top:16px;background:var(--c-neutral);border-radius:var(--radius-lg);padding:20px;border:1px solid var(--c-border)">
+          <p style="font-size:13px;font-weight:700;color:var(--c-dark);margin-bottom:8px">¿Sin teléfono inteligente?</p>
+          <p style="font-size:13px;color:var(--c-gray);margin-bottom:12px">Puedes agendar esta misma cita en el kiosco digital de la farmacia más cercana.</p>
+          <a href="../index.html#kiosco" class="btn btn--ghost btn--sm">Ver kioscos →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <span class="nav__logo-mark">VC</span>
+          VidaClara
+        </div>
+        <p>Plataforma de salud y bienestar accesible para Guatemala.</p>
+      </div>
+      <div class="footer__links">
+        <div class="footer__col">
+          <strong>Acceso</strong>
+          <a href="buscar.html">Buscar servicios</a>
+          <a href="../index.html#kiosco">Kiosco digital</a>
+        </div>
+        <div class="footer__col">
+          <strong>Soporte</strong>
+          <a href="#">Ayuda</a>
+          <a href="#">Línea: 1800-SALUD</a>
+          <a href="#">Emergencias: 1-2-3</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <span>© 2026 VidaClara</span>
+        <span>Hecho con ❤️ para Guatemala</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
